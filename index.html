@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arsalan Bardsiri's links</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
   <style>
     html {
       min-height: 100%;
@@ -17,16 +23,19 @@
       background: linear-gradient(150deg, #8503b9, #6e18ce, #4428e4, #0072dc, #0990a8);
       /* min-height: 100vh;   Needed to not look splited */
       color: rgb(197, 169, 244);
+      font-family: "Google Sans Code", monospace;
     }
 
     a {
       color: rgb(197, 169, 244);
+      text-decoration: none;
     }
 
     .avatar-img {
       width: 128px;
       height: 128px;
       object-fit: cover;
+      border-radius: 128px;
     }
 
     .thumbnail {
@@ -39,6 +48,9 @@
     .item {
       background-color: rgba(140, 113, 165, 0.5);
       margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      border-radius: 1000px;
     }
 
     .main-container {
@@ -54,10 +66,21 @@
     .name-row {
       margin-bottom: 30px;
       text-align: center;
+      font-size: 24px;
+      font-family: "Space Mono", monospace;
+      font-weight: 700;
+      font-style: italic;
     }
 
     .social-icon {
       margin-bottom: 30px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .link-text {
+      text-align: center;
+      flex-grow: 1;
     }
   </style>
 </head>
@@ -71,8 +94,12 @@
     <div class="name-row">Arsalan Bardsiri</div>
 
     <div class="social-icon">
-      <a href="https://github.com/arsalanbardsiri" target="_blank">Github</a>
-      <a href="https://www.linkedin.com/in/arsalan-bardsiri/" target="_blank">Linkedin</a>
+      <a href="https://github.com/arsalanbardsiri" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/arsalan-bardsiri/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
     </div>
 
     <div class="links-row">
@@ -80,7 +107,7 @@
       <div class="item">
         <img class="thumbnail" loading="lazy" src="/thumbnails/startup.jpg">
 
-        <a target="_blank" href="http://paulgraham.com/startupideas.html">
+        <a class="link-text" target="_blank" href="http://paulgraham.com/startupideas.html">
           How to Get Startup Ideas
         </a>
       </div>
@@ -88,7 +115,7 @@
       <div class="item">
         <img class="thumbnail" loading="lazy" src="/thumbnails/typography.jpg">
 
-        <a target="_blank" href="https://practicaltypography.com/typography-in-ten-minutes.html">
+        <a class="link-text" target="_blank" href="https://practicaltypography.com/typography-in-ten-minutes.html">
           Typography in ten minutes
         </a>
       </div>
