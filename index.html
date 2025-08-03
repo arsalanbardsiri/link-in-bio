@@ -55,7 +55,12 @@
       align-items: center;
       border-radius: 1000px;
       padding: 5px 53px 5px 5px;
+    }
+
+    .item:hover{
+      transform: translateY(-5px);
       box-shadow: 4px 6px 16px 5px rgba(122, 32, 122, 0.5);
+      transition: 0.3s;
     }
 
     .main-container {
@@ -66,6 +71,12 @@
     .image-row {
       margin-bottom: 20px;
       text-align: center;
+    }
+
+    .avatar-img:hover{
+      transform: translateY(-5px);
+      box-shadow: 4px 6px 16px 5px rgba(236, 179, 236, 0.5);
+      transition: 0.3s;
     }
 
     .name-row {
@@ -81,6 +92,16 @@
       margin-bottom: 30px;
       display: flex;
       justify-content: space-around;
+    }
+
+    #social-item{
+      font-size: xx-large;
+    }
+
+    #social-item:hover{
+      transform: translateY(-5px);
+      box-shadow: 4px 6px 16px 5px rgba(122, 32, 122, 0.5);
+      transition: 0.3s;
     }
 
     .link-text {
@@ -100,13 +121,13 @@
 
     <div class="social-icon">
       <a href="https://github.com/arsalanbardsiri" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-github"></i>
+        <i id="social-item" class="fa-brands fa-github"></i>
       </a>
       <a href="https://www.linkedin.com/in/arsalan-bardsiri/" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-linkedin"></i>
+        <i id="social-item" class="fa-brands fa-linkedin"></i>
       </a>
       <a href="https://dev.to/arsalanbardsiri" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-dev"></i>
+        <i id="social-item" class="fa-brands fa-dev"></i>
       </a>
     </div>
 
