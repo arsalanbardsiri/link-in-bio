@@ -1,5 +1,3 @@
-# static-html-template
+# Link Page
 
-Use this template to create static HTML websites and deploy them on Render.
-
-Some rights reserved — see [LICENSE.txt](LICENSE.txt)
+A responsive and visually appealing "link-in-bio" page featuring social media icons and custom links. The page includes smooth hover animations and a neon text glow effect.
