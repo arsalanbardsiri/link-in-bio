@@ -62,6 +62,8 @@
     .item:hover {
       transform: translateY(-5px);
       box-shadow: 4px 6px 16px 5px rgba(122, 32, 122, 0.5);
+      color: #fff;
+      text-shadow: 0 0 5px #bda9f4, 0 0 10px #bda9f4, 0 0 20px #bda9f4;
     }
 
     .main-container {
@@ -106,6 +108,8 @@
     .social-item:hover {
       transform: translateY(-5px);
       box-shadow: 4px 6px 16px 5px rgba(122, 32, 122, 0.5);
+      color: #fff;
+      text-shadow: 0 0 5px #bda9f4, 0 0 10px #bda9f4, 0 0 20px #bda9f4;
     }
 
     .link-text {
@@ -124,6 +128,17 @@
         padding: 5px 20px 5px 5px;
         /* Reduce padding for a better fit on mobile */
       }
+    }
+
+    .name-row,
+    .link-text,
+    .social-item {
+      transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    }
+
+    .name-row:hover {
+      color: #fff;
+      text-shadow: 0 0 5px #bda9f4, 0 0 10px #bda9f4, 0 0 20px #bda9f4;
     }
   </style>
 </head>
